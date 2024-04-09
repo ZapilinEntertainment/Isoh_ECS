@@ -8,5 +8,6 @@ namespace ZE.IsohECS
     public sealed class GameElementsPack : ScriptableObject
 	{
 		[field:SerializeField] public GameObject SelectionMark { get; private set; }
+		[field: SerializeField] public VisualObject SoldierPrefab { get; private set; }
 	}
 }

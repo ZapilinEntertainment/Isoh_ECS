@@ -5,9 +5,8 @@ using ZE.ServiceLocator;
 using Unity.Entities;
 
 namespace ZE.IsohECS {
-	// visible if active, hidden if deactivated
-	public struct VisibilityStateComponent : IComponentData
+	public interface ISelectableVisualObject
 	{
-	
+		public Transform SelectionAnchor { get; }
 	}
 }

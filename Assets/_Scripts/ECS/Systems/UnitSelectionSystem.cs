@@ -18,7 +18,7 @@ namespace ZE.IsohECS {
     public partial struct UnitSelectionSystem : ISystem
     {
 
-       // [BurstCompile]
+       [BurstCompile]
         public void OnUpdate(ref SystemState state)
         {
             if (

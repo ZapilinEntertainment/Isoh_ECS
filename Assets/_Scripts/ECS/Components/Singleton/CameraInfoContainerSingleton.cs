@@ -26,7 +26,7 @@ namespace ZE.IsohECS {
             CameraToWorldMatrix = cameraToWorldMatrix;
         }
         [BurstCompile]
-        public float2 ConvertWorldToNormalizedScreenCoordinates(float3 point)
+        public float2 WorldToNormalizedScreenCoordinates(float3 point)
         {
             /*
             * 1 convert P_world to P_camera

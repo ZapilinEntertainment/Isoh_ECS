@@ -27,7 +27,7 @@ namespace ZE.IsohECS {
             [BurstCompile]
             public void Execute(in LocalTransform transform, ref ScreenPositionComponent screenPos)
             {
-                screenPos.Value = CameraInfo.ConvertWorldToNormalizedScreenCoordinates(transform.Position);
+                screenPos.Value = CameraInfo.WorldToNormalizedScreenCoordinates(transform.Position);
             }
         }      
     }

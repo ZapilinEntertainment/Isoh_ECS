@@ -19,7 +19,7 @@ namespace ZE.ServiceLocator
         {
             get
             {
-                if (_instance == null)
+                if (_instance == null && Application.isPlaying)
                 {
                     _instance = new GameObject("ServiceLocator").AddComponent<ServiceLocatorObject>();
                     _instance.Prepare();
